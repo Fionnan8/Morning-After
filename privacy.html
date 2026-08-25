@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning After — Privacy Policy</title>
+<meta name="description" content="How Morning After collects, uses, and lets you remove your data." />
+<style>
+  :root {
+    --bg: #0B0614; --bg-2: #140B24; --card: #1A1030;
+    --text: #F4EEFF; --muted: #B4A8CE; --accent: #FF8A5B; --accent-2: #FFC46B;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(180deg, var(--bg-2), var(--bg));
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7; min-height: 100vh;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700;
+    font-size: 15px; color: var(--muted); text-decoration: none; }
+  .sun { width: 20px; height: 20px; border-radius: 50%;
+    background: linear-gradient(160deg, var(--accent-2), var(--accent));
+    box-shadow: 0 0 20px rgba(255,150,90,0.6); }
+  h1 { font-size: clamp(30px, 5vw, 42px); margin: 24px 0 4px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; color: #fff; }
+  p, li { color: var(--muted); }
+  strong { color: var(--text); }
+  a { color: var(--accent-2); }
+  ul { padding-left: 20px; } li { margin: 8px 0; }
+  .back { display: inline-block; margin-bottom: 8px; color: var(--muted); text-decoration: none; font-size: 14px; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+  footer { color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="sun"></span> Morning After</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 24 August 2026</p>
+
+    <p>Morning After (“the app”) is a night-out photo app: you and your friends take
+    photos that stay locked until a shared “reveal” the next morning. This policy
+    explains what data the app collects, why, and how you can remove it.</p>
+
+    <h2>1. What we collect</h2>
+    <ul>
+      <li><strong>A display name.</strong> Chosen at first launch. No email, phone number, or password is required to use the app.</li>
+      <li><strong>An account identifier.</strong> The app signs you in anonymously (no credentials) so your nights and photos can sync across your own devices and be shared with the friends you invite. This creates a random account ID; it is not tied to your real-world identity unless you choose to link an email (below).</li>
+      <li><strong>Photos you take in the app</strong>, and metadata about them (who took it, which night it belongs to, when it was taken, whether you’ve flagged it).</li>
+      <li><strong>Night details</strong>: a night’s name, its invite code, its members, and its reveal time.</li>
+      <li><strong>An email address, only if you choose to add one.</strong> Settings → “Save your account” lets you attach an email so your nights survive a reinstall or a new phone. This is optional. We use it solely to send a one-time verification code and to restore your account later — never for marketing.</li>
+      <li><strong>Standard infrastructure logs</strong> (e.g. IP address, request timestamps) generated automatically by our hosting/database provider as part of operating the service. We don’t use these for tracking or profiling.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect contacts, location, browsing history, or any data from other apps on your device. We do not run ads and do not sell your data.</p>
+
+    <h2>2. Artificial intelligence</h2>
+    <p>Morning After does not currently use AI to process, analyze, moderate, tag, or generate any of your photos, names, or messages. If that changes in a future version, we will update this section before the feature ships.</p>
+
+    <h2>3. Who we share data with</h2>
+    <p>We use a small number of service providers to run the app. They process data on our behalf, under their own privacy/security commitments, and don’t use it for their own purposes:</p>
+    <ul>
+      <li><strong>Supabase</strong> (database, authentication, file storage, and realtime sync). Your account, nights, and photo bytes are stored on Supabase’s infrastructure. See <a href="https://supabase.com/privacy">supabase.com/privacy</a>.</li>
+      <li><strong>Resend</strong> (transactional email). Used only to deliver the one-time code when you choose to link an email address. See <a href="https://resend.com/legal/privacy-policy">resend.com/legal/privacy-policy</a>.</li>
+    </ul>
+    <p>We do not share your photos, names, or account data with advertisers, data brokers, or analytics companies.</p>
+
+    <h2>4. How photos stay private</h2>
+    <p>Photos are stored in a private bucket — not publicly accessible by URL. Access is enforced by the same rule the app shows you: a photo is visible only to you until your night’s reveal time, after which it becomes visible to the other members of that night. Server-side rules (not just the app’s UI) enforce this, so it can’t be bypassed by tampering with the app.</p>
+
+    <h2>5. Your data, your control</h2>
+    <ul>
+      <li><strong>Delete a photo or a whole night</strong> any time from inside the app — this removes both the record and the underlying image file from our storage, not just the reference to it.</li>
+      <li><strong>Delete everything at once</strong>: Settings → “Delete my data” removes every night you created (and its photos, including the stored image bytes), removes you from any nights you joined as a guest, and signs you out of this device.</li>
+      <li><strong>Full account erasure</strong>: because this app has no separate backend server — it talks directly to our database provider under strict per-user access rules — deleting the underlying anonymous account record itself (as opposed to your content) currently requires a request to us directly at the contact below. We’ll process it promptly. We’re working toward making this self-service.</li>
+    </ul>
+
+    <h2>6. Children’s privacy</h2>
+    <p>Morning After is not directed at children under 13, and we do not knowingly collect data from them. If you believe a child has used the app, contact us and we will delete the associated data.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>If we materially change what we collect or who we share it with, we’ll update this document and its “Last updated” date, and surface the change in the app.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions, deletion requests, or concerns: <a href="mailto:themorningafterapp@gmail.com">themorningafterapp@gmail.com</a>.</p>
+
+    <hr />
+    <footer>© 2026 Morning After · <a href="index.html">Support</a> · <a href="terms.html">Terms</a></footer>
+  </div>
+</body>
+</html>
